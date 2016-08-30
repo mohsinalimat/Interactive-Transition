@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" image="Hey" translatesAutoresizingMaskIntoConstraints="NO" id="s8H-Rx-m7Y">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <gestureRecognizers/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPc-d0-dmy">
+                                <rect key="frame" x="144" y="40" width="33" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="B3q-MX-rta"/>
+                                    <constraint firstAttribute="width" constant="33" id="sfO-lX-I2I"/>
+                                </constraints>
+                                <state key="normal" image="Snapchat"/>
+                                <connections>
+                                    <action selector="snapchatButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oPn-Cd-IpS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yum-Gg-f7Q">
+                                <rect key="frame" x="15" y="513" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.098039215690000001" green="0.59607843140000005" blue="0.99215686270000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Eth-A9-Kld"/>
+                                    <constraint firstAttribute="width" constant="40" id="USg-U7-De1"/>
+                                </constraints>
+                                <state key="normal" image="Dialog"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5bq-fV-LTk">
+                                <rect key="frame" x="265" y="513" width="40" height="40"/>
+                                <color key="backgroundColor" red="0.55294117649999996" green="0.25882352939999997" blue="0.76078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="NMn-dJ-rNF"/>
+                                    <constraint firstAttribute="height" constant="40" id="bgM-Dg-4q9"/>
+                                </constraints>
+                                <state key="normal" image="Groups"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="yPc-d0-dmy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="19a-PJ-MiJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5bq-fV-LTk" secondAttribute="bottom" constant="15" id="DeS-lu-LFB"/>
+                            <constraint firstItem="s8H-Rx-m7Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HxP-M0-Tfi"/>
+                            <constraint firstItem="yPc-d0-dmy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="K4E-eV-koB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="s8H-Rx-m7Y" secondAttribute="bottom" id="LPH-B7-tOX"/>
+                            <constraint firstAttribute="trailing" secondItem="5bq-fV-LTk" secondAttribute="trailing" constant="15" id="ZNZ-s3-6Gf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yum-Gg-f7Q" secondAttribute="bottom" constant="15" id="gYK-RL-1OV"/>
+                            <constraint firstAttribute="trailing" secondItem="s8H-Rx-m7Y" secondAttribute="trailing" id="nKT-mo-hF6"/>
+                            <constraint firstItem="Yum-Gg-f7Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="qod-AE-k9Q"/>
+                            <constraint firstItem="s8H-Rx-m7Y" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ukW-Rx-e3Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dialogButton" destination="Yum-Gg-f7Q" id="rdk-GS-j1U"/>
+                        <outlet property="groupsButton" destination="5bq-fV-LTk" id="9u6-Ij-o6V"/>
+                        <outlet property="snapchatButton" destination="yPc-d0-dmy" id="4vi-B1-SCR"/>
+                        <outlet property="snapchatButtonTopConstraint" destination="19a-PJ-MiJ" id="suU-Pi-ZHZ"/>
+                        <segue destination="Ywl-C4-dV5" kind="modal" identifier="presentProfileScreen" id="x0A-GA-as3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="164.80000000000001" y="345.06"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="8jN-DN-ukS">
+            <objects>
+                <viewController id="Ywl-C4-dV5" customClass="ProfileViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rXv-XK-Ppr"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hhd-uO-zgm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="mZ0-ep-4qB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pablo Romero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uUP-Ii-9Nt">
+                                <rect key="frame" x="20" y="254" width="280" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="F5l-gA-awL"/>
+                                    <constraint firstAttribute="width" constant="280" id="LIK-gW-PKi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Ghost QR" translatesAutoresizingMaskIntoConstraints="NO" id="dA9-LK-fJv">
+                                <rect key="frame" x="80" y="80" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="eXr-qX-0h6"/>
+                                    <constraint firstAttribute="width" constant="160" id="kAf-B8-byL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ee4-ZD-JFy">
+                                <rect key="frame" x="120" y="418" width="80" height="80"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="bxJ-Cu-Pey"/>
+                                    <constraint firstAttribute="width" secondItem="Ee4-ZD-JFy" secondAttribute="height" multiplier="1:1" id="sa2-B1-vCm"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="Circle"/>
+                                <connections>
+                                    <action selector="cancelButtonTouched:" destination="Ywl-C4-dV5" eventType="touchUpInside" id="7Ha-Ii-G0i"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dA9-LK-fJv" firstAttribute="centerX" secondItem="mZ0-ep-4qB" secondAttribute="centerX" id="2XR-Aa-VH2"/>
+                            <constraint firstItem="uUP-Ii-9Nt" firstAttribute="top" secondItem="dA9-LK-fJv" secondAttribute="bottom" constant="14" id="B39-i2-ULp"/>
+                            <constraint firstItem="uUP-Ii-9Nt" firstAttribute="centerY" secondItem="mZ0-ep-4qB" secondAttribute="centerY" constant="-20" id="HcC-64-s1O"/>
+                            <constraint firstItem="Ee4-ZD-JFy" firstAttribute="centerX" secondItem="mZ0-ep-4qB" secondAttribute="centerX" id="YTf-Ux-HT5"/>
+                            <constraint firstItem="Hhd-uO-zgm" firstAttribute="top" secondItem="Ee4-ZD-JFy" secondAttribute="bottom" constant="70" id="hg5-WW-akJ"/>
+                            <constraint firstItem="Ee4-ZD-JFy" firstAttribute="width" secondItem="Ee4-ZD-JFy" secondAttribute="height" multiplier="1:1" id="qFW-xs-m1u"/>
+                            <constraint firstItem="uUP-Ii-9Nt" firstAttribute="centerX" secondItem="mZ0-ep-4qB" secondAttribute="centerX" id="yVK-ua-Gc4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PD5-vK-KdD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="612" y="345"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Circle" width="50" height="50"/>
+        <image name="Dialog" width="25" height="25"/>
+        <image name="Ghost QR" width="160" height="160"/>
+        <image name="Groups" width="25" height="25"/>
+        <image name="Hey" width="512" height="384"/>
+        <image name="Snapchat" width="50" height="50"/>
+    </resources>
+</document>

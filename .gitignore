@@ -58,3 +58,9 @@ fastlane/screenshots
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+/.DS_Store
+
+/Transition.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+
+/Transition/.DS_Store
